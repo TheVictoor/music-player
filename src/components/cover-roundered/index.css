@@ -1,0 +1,47 @@
+.cover-roudered {
+	width: 100%;
+	height: 400px;
+}
+
+.cover-roudered .music-cover {
+	width: 100%;
+	background-color: transparent;
+}
+
+.music-cover .art {
+	background-position: center;
+	background-size: cover;
+	width: 200px;	
+	height: 200px;
+	border-radius: 16px;
+	z-index: 1;
+}
+
+.music-cover .art-shadow {
+	z-index: 0;
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	transform : translate(-10px, -25px);
+	filter: blur(8px);
+	opacity: 0.5;
+}
+
+.music-info {
+	z-index: 2;
+	width: 100%;
+}
+
+.music-info .music-name {
+	display: block;
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+
+.cover-roudered .music-info .music-author {
+	display: block;
+	letter-spacing: .5px;
+	font-size: .8rem;
+}
