@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AlbumArt from '../../components/album-art';
-import Controls from '../../components/max-music-controls';
+import Controls from '../../components/music-controls';
 import Timer from '../../components/music-timer';
 import PlayerNagivation from '../../components/player-navigation';
 

@@ -24,7 +24,7 @@
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	transform : translate(-10px, -25px);
+	transform : translate(0px, -25px);
 	filter: blur(8px);
 	opacity: 0.5;
 }

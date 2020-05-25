@@ -1,0 +1,40 @@
+.song-description {
+	width: 100% !important;
+	max-width: 400px;
+	height: 50px;
+}
+
+.play-button {
+	width: 30px;
+	height: 30px;
+	background-color: var(--bg-color-1);
+	box-shadow: var(--brand-color) 0px 0px 5px;
+	font-size: .7rem;
+	color: var(--brand-color);
+	border-radius: 50%;
+}
+
+.track-data {
+	letter-spacing: .02rem;
+}
+
+.track-data .song{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: .9rem;
+}
+
+.track-data .album {
+	margin: 0;
+	padding: 0;
+	border: none;
+	display: block;
+	font-size: .7rem;
+}
+
+.options {
+	font-size: 1.2rem;
+	color: var(--brand-color);
+}
