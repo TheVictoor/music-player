@@ -6,3 +6,8 @@
 .navigation-player-color {
 	color: var(--brand-color);
 }
+
+.navigation-player-color:hover, .navigation-player-color:active {
+	color: var(--brand-color);
+	text-decoration: none;
+}
