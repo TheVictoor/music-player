@@ -7,7 +7,7 @@
 ## :wrench: Setup
 ```dash
 	npm install
-    npm start
+	npm start
 ```
 Obs.: build your .env file with the template
 
