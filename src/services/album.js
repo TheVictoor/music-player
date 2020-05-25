@@ -29,7 +29,7 @@ const Albums = {
 
 			return transformed;
 		} catch (error) {
-			console.log(error);			
+			console.log(error);
 		}
 	},
 
@@ -58,7 +58,7 @@ const Albums = {
 
 			return transformed;
 		} catch (error) {
-			console.log(error);			
+			console.log(error);
 		}
 	}
 };

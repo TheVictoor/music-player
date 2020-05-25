@@ -1,17 +1,28 @@
 import React, { useState } from 'react';
 import './index.css';
 
+const getInMinutes = (seconds) => {
+	let result = 0;
+	
+	while (seconds > 59){
+		++result;
+		seconds -= 60;
+	}
+
+	return `${result}.${seconds < 10 ? '0' + seconds : seconds}`;
+};
+
 function Timer (props) {
 	const duration = props.track && props.track.duration;
-	const inMinutes = duration / 1000 / 60;
-	const inSeconds = duration / 1000;
+	const inSeconds = parseInt(duration / 1000);
+	const inMinutes = getInMinutes(inSeconds);
 	const [current,] = useState({ value: 1 });
 
 	return (
 		<div className='music-timer'>
 			<div className="timer-info d-flex justify-content-between px-4">
-				<span> { (current.value / 100).toFixed(2).toString().replace('.', ':') } </span>
-				<span> { inMinutes.toFixed(2).toString().replace('.', ':') } </span>
+				<span> { (getInMinutes(current.value)).replace('.', ':') } </span>
+				<span> { inMinutes.replace('.', ':') } </span>
 			</div>
 			<div className="timer-ui px-4 my-2">
 				<div className="base"></div>
