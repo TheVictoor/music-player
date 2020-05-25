@@ -1,0 +1,8 @@
+.navigation-player {
+	width: 100%;
+	height: 50px;
+}
+
+.navigation-player-color {
+	color: var(--brand-color);
+}

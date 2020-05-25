@@ -1,0 +1,18 @@
+.album-art-simple {
+	--metric: calc(100vw / 3);
+	width: var(--metric);
+	height: calc(var(--metric) + 50px);
+}
+
+.album-art-simple img {
+	width: calc(var(--metric) - 30px);
+	height: calc(var(--metric) - 30px);
+	border-radius: 10px;
+}
+
+.album-name {
+	font-size: .6rem;
+	letter-spacing: .2rem;
+	overflow: hidden;
+	word-wrap: none;
+}

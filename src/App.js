@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import Routes from './routes.js';
 
-import Player from './views/player';
+import './App.css';
 
 function App() {
   return (
-    <div id='app'>
-      <Player />
+    <div id="app">
+      <BrowserRouter>
+        <Routes/>
+      </BrowserRouter>
     </div>
   );
 }

@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './index.css';
 import './assets/font-awesome/css/all.css';
-
 import 'bootstrap/dist/css/bootstrap.css';
-
 import App from './App';
 
 ReactDOM.render(

@@ -2,14 +2,6 @@ import React from 'react';
 import './index.css';
 import repeatIcon  from './../../assets/icons/repeat.svg';
 
-function PlayPauseButton() {
-	const element = Math.random() * 100 & 1
-		? <i className="fas fa-play"></i>
-		: <i className="fas fa-pause"></i>;
-
-	return element;
-}
-
 function Controls () {
 	return (
 		<div className='controls d-flex justify-content-around align-items-center px-4'>
@@ -20,7 +12,7 @@ function Controls () {
 				<i className="fas fa-step-backward"></i>
 			</button>
 			<button className='music-play-pause'>
-				<PlayPauseButton />
+				<i className="fas fa-play"></i>
 			</button>
 			<button className='music-next'>
 				<i className="fas fa-step-forward"></i>

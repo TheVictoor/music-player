@@ -1,0 +1,9 @@
+.header-albums {
+	font-size: 1.8rem;
+	letter-spacing: .3rem;
+	color: var(--brand-color);	
+}
+
+.link-color {
+	color: white;	
+}
