@@ -2,11 +2,15 @@
 	--metric: calc(100vw / 3);
 	width: var(--metric);
 	height: calc(var(--metric) + 50px);
+	max-width: 266px;
+	max-height: 316px;
 }
 
 .album-art-simple img {
 	width: calc(var(--metric) - 30px);
+	max-width: 233px;
 	height: calc(var(--metric) - 30px);
+	max-height: 233px;
 	border-radius: 10px;
 }
 

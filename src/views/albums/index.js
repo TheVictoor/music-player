@@ -20,24 +20,26 @@ class Albums extends React.Component {
 
 	render(){
 		return (
-			<div>
-				<div>
-					<h1 className='text-center header-albums py-2'>
-						Albums
-					</h1>
-				</div>
-				<div>
-					{
-						this.state.albums.map(a => {
-							return (
-								<div className="d-inline-block" key={a.id}>
-									<Link to={`/player/${a.id}`} className='link-color'>
-										<AlbumArt album={a}/>
-									</Link>
-								</div>
-							)
-						})
-					}
+			<div className="almbum-container d-flex justify-content-center">
+				<div className='albums'>
+					<div>
+						<h1 className='text-center header-albums py-2'>
+							Albums
+						</h1>
+					</div>
+					<div className=''>
+						{
+							this.state.albums.map(a => {
+								return (
+									<div className="d-inline-block" key={a.id}>
+										<Link to={`/player/${a.id}`} className='link-color'>
+											<AlbumArt album={a}/>
+										</Link>
+									</div>
+								)
+							})
+						}
+					</div>
 				</div>
 			</div>
 		);

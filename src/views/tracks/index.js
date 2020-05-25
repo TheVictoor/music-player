@@ -27,7 +27,7 @@ class TrackList extends React.Component{
 		});
 
 		return (
-			<div>
+			<div className='d-flex flex-column align-items-center'>
 				<TrackNavigation  id={this.state.id}/>
 				<div className='song-list'>
 					{ elements }
