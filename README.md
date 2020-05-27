@@ -1,5 +1,7 @@
 #   <p align='center'> Music Web Player </p>
 
+## :construction: :warning: Work in progress!! 
+
 ## :dart: Objective 
 <p> The Music Web Player is a project to learning and practice ReactJS fundamentals, then, is not a 100% functional application </p>
 
