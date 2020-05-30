@@ -13,10 +13,6 @@ async function authorization(isNew = false){
 	const stored = sessionStorage.getItem('key');
 
 	if(isNew || !stored){
-		const bodyFormData = new FormData();
-
-		bodyFormData.set('grant_type', 'client_credentials');
-
 		const { data } = await request.post(process.env.REACT_APP_AUTH_PATH, 'grant_type=client_credentials', {
 			headers: {
 				Authorization: `Basic ${key}`

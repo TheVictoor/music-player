@@ -1,10 +1,7 @@
 import React from "react";
 import './index.css';
 
-function Song(props){
-	const album = props.album;
-	const track = props.track;
-
+function Song({ album, track }){
 	return (
 		<div className='song-description d-flex align-items-center my-3'>
 			<div className='d1'>
@@ -14,7 +11,7 @@ function Song(props){
 			</div>
 			<div className='flex-grow-1 track-data'>
 				<span className='song'> { track.name } </span>
-				<span className='album'>{ album || 'teste' }</span>
+				<span className='album'>{ album }</span>
 			</div>
 			<div className='options'>
 				<i className="fas fa-ellipsis-v mx-2 mr-4"></i>

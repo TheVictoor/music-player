@@ -11,7 +11,6 @@ const Albums = {
 		const token = await authorization();
 
 		try {
-
 			const { data }= await request.get('v1/browse/new-releases', {
 				headers: {
 					Authorization: `Bearer ${token}`
