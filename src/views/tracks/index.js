@@ -4,37 +4,24 @@ import TrackNavigation from '../../components/song-navigation';
 
 import './index.css';
 
-class TrackList extends React.Component{
-	constructor(props	){
-		super(props);
+const TrackList = (props) => {
+	const { id }= props.match.params;
+	const { tracks, name: albumName } = JSON.parse(sessionStorage.getItem(id));
 
-		const id = props.match.params.id;
-		let track = sessionStorage.getItem(id);
-		track = JSON.parse(track);
-
-		this.state = {
-			albumName: track.name,
-			tracks: track.tracks,
-			id,
-		}
-	}
-
-	render(){
-		const elements = this.state.tracks.map(track => {
-			return (
-				<Track key={track.id} track={track} album={this.state.albumName}/>
-			);
-		});
-
+	const tracksComponents = tracks.map(track => {
 		return (
-			<div className='d-flex flex-column align-items-center'>
-				<TrackNavigation  id={this.state.id}/>
-				<div className='song-list'>
-					{ elements }
-				</div>
-			</div>
+			<Track key={track.id} track={track} album={albumName}/>
 		);
-	}
-}
+	});
+	
+	return (
+		<div className='d-flex flex-column align-items-center'>
+			<TrackNavigation  id={id}/>
+			<div className='song-list'>
+				{ tracksComponents }
+			</div>
+		</div>
+	);
+};
 
 export default TrackList;
