@@ -4,7 +4,7 @@ import './index.css';
 function Song({ album, track }){
 	return (
 		<div className='song-description d-flex align-items-center my-3'>
-			<div className='d1'>
+			<div>
 				<div className='play-button mx-3 d-flex align-items-center justify-content-center'>
 					<i className="fas fa-play"></i>
 				</div>

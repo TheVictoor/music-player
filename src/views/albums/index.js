@@ -36,7 +36,7 @@ const Albums = () => {
 						Albums
 					</h1>
 				</div>
-				<div className=''>
+				<div>
 					{ albumsComponents }
 				</div>
 			</div>

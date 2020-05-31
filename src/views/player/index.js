@@ -27,7 +27,6 @@ const Player = (props) => {
 		};
 		
 		fetch();
-		console.log('tests');
 	}, [id] );
 
 	return (
