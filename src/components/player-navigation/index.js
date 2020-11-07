@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './index.css';
 
 function nagivation(props){
-	const id = props.id;
+	const { id } = props;
 	return (
 		<div className='navigation-player d-flex justify-content-between align-items-center px-3'>
 			<Link to='/' className='navigation-player-color'>
